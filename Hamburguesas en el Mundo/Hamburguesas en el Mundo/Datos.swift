@@ -48,7 +48,7 @@ class ColeccionDePaises{
         "Cameroon"]
     
     func obtenPais( )->String{
-        return self.paises[Int(arc4random() % 20)]
+        return self.paises[Int(arc4random()) % self.paises.count]
     }
 }
 
@@ -75,6 +75,6 @@ class ColeccionDeHamburguesa{
     "Hamburguesa de soja"]
     
     func obtenHamburguesa( )->String{
-        return self.hamburguesas[Int(arc4random() % 20)]
+        return self.hamburguesas[Int(arc4random()) % self.hamburguesas.count]
     }
 }
